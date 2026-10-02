@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta::title">Recurring Buys · Venga</title>
+<meta name="description" data-i18n-attr="content:meta::description" content="Invest a fixed amount automatically, every week or month, and build your crypto over time.">
+<link rel="preload" href="fonts/labil_grotesk_black.otf" as="font" type="font/otf" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<a class="skip" href="#main" data-i18n="nav::skip">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo" aria-label="Venga"><img src="assets/v2/logo.svg" width="130" height="24" alt="Venga"></a>
+  <nav class="nav__menu" id="menu" aria-label="Main">
+    <a href="#" class="nav__link" data-i18n="nav::euro">EURO</a>
+    <a href="#" class="nav__link"><span data-i18n="nav::trade">TRADE</span> <img src="assets/v2/nav-arrow-trade.svg" width="16" height="16" alt=""></a>
+    <a href="#" class="nav__link" data-i18n="nav::earn">EARN</a>
+    <a href="#" class="nav__link" data-i18n="nav::about">ABOUT</a>
+    <a href="#blog" class="nav__link" data-i18n="nav::blog">BLOG</a>
+    <a href="#download" class="nav__link nav__link--cta" data-i18n="nav::download">DOWNLOAD</a>
+  </nav>
+  <div class="nav__end">
+    <div class="lang" id="lang">
+      <button class="lang__btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-list" data-i18n-attr="aria-label:nav::language">
+        <img class="lang__flag" src="assets/v2/flag-uk.svg" width="20" height="20" alt="">
+        <span class="lang__code">EN</span>
+        <img class="lang__caret" src="assets/v2/nav-arrow-down.svg" width="16" height="16" alt="">
+      </button>
+      <ul class="lang__list" id="lang-list" role="listbox" hidden>
+        <li role="option" data-lang="en" aria-selected="true"><img src="assets/v2/flag-uk.svg" width="20" height="20" alt=""> English</li>
+        <li role="option" data-lang="es" aria-selected="false"><img src="assets/v2/flag-es.svg" width="20" height="20" alt=""> Español</li>
+      </ul>
+    </div>
+    <a href="#download" class="nav__cta" data-i18n="nav::download">DOWNLOAD</a>
+    <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" data-i18n-attr="aria-label:nav::menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__copy">
+    <h1 class="h1" data-words data-i18n="hero::header::title">Set up your saving plan today</h1>
+    <p class="sub" data-reveal style="--d:.5s" data-i18n="hero::header::subtitle">Invest a fixed amount automatically, every week or month, and build your crypto over time.</p>
+    <a href="#download" class="cta" data-reveal="pop" style="--d:.65s">
+      <span class="cta__label" data-i18n="hero::cta::button">Start your recurring buy</span>
+      <span class="cta__icon"><img src="assets/v2/arrow-right.svg" width="24" height="24" alt=""></span>
+    </a>
+  </div>
+
+  <div class="hero__art" aria-hidden="true">
+    <div class="art">
+      <div class="art__chart">
+        <img class="art__area" src="assets/v2/hero-area.svg" width="604" height="403" alt="">
+        <svg class="art__line" width="600.789" height="228.426" viewBox="0 0 600.789 228.426" fill="none"><path pathLength="1" d="M0.539431 226.5L82.9516 203.417L143.947 179.53C162.852 172.127 184.08 173.586 201.795 183.506C223.674 195.758 250.53 194.933 271.615 181.361L292.628 167.835L369.113 129.849C381.076 123.908 394.251 120.817 407.607 120.817C436.943 120.817 464.281 105.956 480.234 81.3372L497.942 54.0102C503.362 45.6463 510.001 38.1395 517.641 31.7389L525.269 25.3479C543.27 10.2655 566.006 2 589.491 2H600.789" stroke="#FFDA44" stroke-width="4"/></svg>
+      </div>
+      <img class="art__pin" style="--x:31.86;--y:210.73;--i:0" src="assets/v2/hero-pin.svg" width="124" height="142" alt="">
+      <img class="art__pin" style="--x:176.86;--y:203.73;--i:1" src="assets/v2/hero-pin.svg" width="124" height="142" alt="">
+      <img class="art__pin" style="--x:321.86;--y:136.73;--i:2" src="assets/v2/hero-pin.svg" width="124" height="142" alt="">
+      <img class="art__pin" style="--x:465.86;--y:32.73;--i:3" src="assets/v2/hero-pin.svg" width="124" height="142" alt="">
+      <div class="art__order">
+        <div class="order">
+          <img class="order__pattern" src="assets/v2/hero-pattern.svg" alt="">
+          <div class="order__glass">
+            <div class="order__coin"><img src="assets/v2/btc.svg" width="27" height="27" alt=""><span>Bitcoin</span></div>
+            <div class="order__text">
+              <span data-i18n="hero::illustration::order_label">Recurring buy order:</span>
+              <b data-i18n="hero::illustration::order_value">€100 Every Monday</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="art__coin" src="assets/v2/coin-btc.png" width="87" height="87" alt="">
+      <div class="art__legend">
+        <span><i style="background:#ffca0d"></i><span data-i18n="hero::illustration::asset_price">Asset Price</span></span>
+        <span><i style="background:#ff6000"></i><span data-i18n="hero::illustration::recurring_buys">Recurring buys</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT IS RECURRING BUY ============ -->
+<section class="section wiv" id="what">
+  <div class="wrap">
+    <header class="head">
+      <h2 class="h2" data-words data-i18n="whatis::header::title">What is recurring buy?</h2>
+      <p class="sub" data-reveal style="--d:.15s" data-i18n="whatis::header::text">Recurring Buys are how you do DCA (dollar-cost averaging) on Venga. You set an amount and a schedule, and we buy crypto for you each time. When prices are lower, your money buys more. When they're higher, it buys less. Over time, your purchase price averages out across all your buys.</p>
+    </header>
+
+    <div class="tiles">
+      <!-- 1 · coins -->
+      <article class="tile tile--sm" style="--c:#f8891e" data-reveal="scale">
+        <img class="tile__pattern tile__pattern--sm" src="assets/v2/pat-wiv1.svg" alt="">
+        <div class="tile__glass">
+          <div class="tile__stage" data-w="355.4" data-h="300">
+            <p class="coins__label" data-i18n="whatis::card1::label">Over 150 coins to invest in</p>
+            <img class="float" style="--x:25.74;--y:90.06;--s:72.25;--fd:0s" src="assets/v2/coin-sui.png" alt="">
+            <img class="float" style="--x:260.75;--y:74.29;--s:83.87;--fd:-1.2s" src="assets/v2/coin-eth.png" alt="">
+            <img class="float" style="--x:178.54;--y:100.86;--s:57.3;--fd:-2.1s" src="assets/v2/coin-jup.png" alt="">
+            <img class="float" style="--x:41.52;--y:154.01;--s:137.85;--fd:-.6s" src="assets/v2/coin-btc.png" alt="">
+            <img class="float" style="--x:223.38;--y:198.02;--s:93;--fd:-1.7s" src="assets/v2/coin-hype.png" alt="">
+          </div>
+          <h3 class="tile__cap" data-i18n="whatis::card1::title">You decide which coins to invest in</h3>
+        </div>
+      </article>
+
+      <!-- 2 · schedule -->
+      <article class="tile tile--sm" style="--c:#78a6ff;--d:.1s" data-reveal="scale">
+        <img class="tile__pattern tile__pattern--sm" src="assets/v2/pat-wiv2.svg" alt="">
+        <div class="tile__glass">
+          <div class="tile__stage" data-w="355.4" data-h="300">
+            <div class="sched sched--eth" style="--x:35.5;--y:35;--r:-23.09deg">
+              <img src="assets/v2/eth.svg" width="31" height="31" alt="">
+              <div class="sched__txt"><b>Ethereum</b><span data-i18n="whatis::card2::example1">Buying €250 on every 3rd.</span></div>
+              <em data-i18n="whatis::frequency::monthly">Monthly</em>
+            </div>
+            <div class="sched sched--sol" style="--x:54;--y:190;--r:-14.47deg">
+              <img src="assets/v2/sol.svg" width="31" height="31" alt="">
+              <div class="sched__txt"><b>Solana</b><span data-i18n="whatis::card2::example2">Buying €1000 every other Friday</span></div>
+              <em data-i18n="whatis::frequency::biweekly">Bi-weekly</em>
+            </div>
+            <div class="sched sched--btc" style="--x:58.13;--y:115.74;--r:0deg">
+              <img src="assets/v2/btc-a.svg" width="31" height="31" alt="">
+              <div class="sched__txt"><b>Bitcoin</b><span data-i18n="whatis::card2::example3">Buying €500 every Monday</span></div>
+              <em data-i18n="whatis::frequency::weekly">Weekly</em>
+            </div>
+          </div>
+          <h3 class="tile__cap" data-i18n="whatis::card2::title">You decide when to invest</h3>
+        </div>
+      </article>
+
+      <!-- 3 · amount -->
+      <article class="tile tile--sm" style="--c:#ff627f;--d:.2s" data-reveal="scale">
+        <img class="tile__pattern tile__pattern--sm" src="assets/v2/pat-wiv3.svg" alt="">
+        <div class="tile__glass">
+          <div class="tile__stage" data-w="355.4" data-h="300">
+            <div class="amt amt--back"></div>
+            <div class="amt amt--mid"></div>
+            <div class="amt amt--front">
+              <div class="amt__coin"><img src="assets/v2/btc-d.svg" width="27" height="27" alt=""><span>Bitcoin</span></div>
+              <b class="amt__val" data-money="250" data-dec="0">€250</b>
+              <div class="amt__track"><i class="amt__fill"></i><i class="amt__knob"></i></div>
+            </div>
+          </div>
+          <h3 class="tile__cap" data-i18n="whatis::card3::title">You decide how much to invest</h3>
+        </div>
+      </article>
+
+      <!-- 4 · one-time set-up -->
+      <article class="tile tile--lg" style="--c:#b5fce1" data-reveal="scale">
+        <img class="tile__pattern tile__pattern--lg" src="assets/v2/pat-wiv4.svg" alt="">
+        <div class="tile__glass">
+          <div class="tile__stage" data-w="549.4" data-h="300">
+            <div class="mini mini--right" style="--x:269.5;--y:41.2;--r:6.85deg;--blur:1.66px">
+              <b><span data-i18n="whatis::card4::this_year">This year</span><br><span data-money="7203.39">€7,203.39</span></b>
+              <small><span data-i18n="whatis::card4::you_invested">You invested</span> <span data-money="3480" data-dec="0">€3,480</span></small>
+              <div class="mini__bars"><i></i><i></i><i></i><i style="--b:rgba(255,98,127,.1)"></i><i style="--b:rgba(255,98,127,.1)"></i></div>
+              <img class="mini__spark" src="assets/v2/spark-green.svg" alt="" style="--sx:26.57;--sy:127;--sw:157.8">
+              <ul class="mini__key"><li><i style="background:#f7f6ed"></i><span data-i18n="whatis::card4::your_investment">Your investment</span></li><li><i style="background:#046f47"></i><span data-i18n="whatis::card4::crypto_price">Crypto price</span></li></ul>
+            </div>
+            <div class="mini mini--left" style="--x:58.4;--y:46.2;--r:-6.85deg;--blur:.83px">
+              <b><span data-i18n="whatis::card4::this_month">This month</span><br><span data-money="900.28">€900.28</span></b>
+              <small><span data-i18n="whatis::card4::you_invested">You invested</span> <span data-money="800" data-dec="0">€800</span></small>
+              <div class="mini__bars"><i style="--b:rgba(255,202,13,.1)"></i><i style="--b:rgba(255,202,13,.1)"></i><i style="--b:rgba(255,202,13,.1)"></i><i></i><i></i></div>
+              <img class="mini__spark" src="assets/v2/spark-yellow.svg" alt="" style="--sx:26.75;--sy:117.5;--sw:155.8">
+              <ul class="mini__key"><li><i style="background:#f7f6ed"></i><span data-i18n="whatis::card4::your_investment">Your investment</span></li><li><i style="background:#ffca0d"></i><span data-i18n="whatis::card4::crypto_price">Crypto price</span></li></ul>
+            </div>
+            <div class="mini mini--front" style="--x:169.4;--y:35.26;--r:0deg;--blur:0px">
+              <b><span data-i18n="whatis::card4::this_year">This year</span><br><span data-money="7203.39">€7,203.39</span></b>
+              <small><span data-i18n="whatis::card4::you_invested">You invested</span> <span data-money="3480" data-dec="0">€3,480</span></small>
+              <div class="mini__bars"><i style="--b:rgba(4,111,71,.1)"></i><i style="--b:rgba(4,111,71,.1)"></i><i style="--b:rgba(4,111,71,.1)"></i><i style="--b:rgba(4,111,71,.1)"></i><i style="--b:rgba(4,111,71,.1)"></i></div>
+              <img class="mini__spark" src="assets/v2/spark-green2.svg" alt="" style="--sx:26.57;--sy:127.05;--sw:157.8">
+              <ul class="mini__key"><li><i style="background:#e6f1ed"></i><span data-i18n="whatis::card4::your_investment">Your investment</span></li><li><i style="background:#046f47"></i><span data-i18n="whatis::card4::crypto_price">Crypto price</span></li></ul>
+            </div>
+          </div>
+          <h3 class="tile__cap" data-i18n="whatis::card4::title">One time set up, we do the rest</h3>
+        </div>
+      </article>
+
+      <!-- 5 · several plans -->
+      <article class="tile tile--lg" style="--c:#e6f96a;--d:.1s" data-reveal="scale">
+        <img class="tile__pattern tile__pattern--lg" src="assets/v2/pat-wiv5.svg" alt="">
+        <div class="tile__glass">
+          <div class="tile__stage" data-w="549.4" data-h="300">
+            <img class="float float--spin" style="--x:-14;--y:-33.5;--s:138.75;--rot:22.95deg;--fd:-.8s" src="assets/v2/coin-sol.png" alt="">
+            <img class="float float--spin" style="--x:388;--y:1.4;--s:102.84;--rot:22.95deg;--fd:-2s" src="assets/v2/coin-btc.png" alt="">
+            <div class="upcoming">
+              <p class="upcoming__head" data-i18n="whatis::card5::upcoming_buys">Upcoming buys</p>
+              <div class="upcoming__row"><img src="assets/v2/btc-d.svg" width="27" height="27" alt=""><span>Bitcoin</span><div><b data-money="2800" data-dec="0">€2800</b><small data-i18n="whatis::frequency::weekly">Weekly</small></div></div>
+              <div class="upcoming__row"><img src="assets/v2/sol-b.svg" width="27" height="27" alt=""><span>Solana</span><div><b data-money="2800" data-dec="0">€2800</b><small data-i18n="whatis::frequency::monthly">Monthly</small></div></div>
+              <div class="upcoming__row"><img src="assets/v2/eth-b.svg" width="27" height="27" alt=""><span>Ethereum</span><div><b data-money="1000" data-dec="0">€1000</b><small data-i18n="whatis::frequency::monthly">Monthly</small></div></div>
+              <p class="upcoming__all" data-i18n="whatis::card5::see_all">See all</p>
+            </div>
+          </div>
+          <h3 class="tile__cap" data-i18n="whatis::card5::title">Set up more than one recurring buy</h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAMPLE ============ -->
+<section class="section example" id="example">
+  <div class="wrap">
+    <header class="head">
+      <h2 class="h2" data-words data-i18n="example::header::title">Let’s see an example</h2>
+      <p class="sub" data-reveal style="--d:.15s" data-i18n="example::header::subtitle">Here is a basic setup for a DCA that anyone could do:</p>
+    </header>
+
+    <div class="example__grid">
+      <div class="example__left">
+        <div class="balance" data-reveal="scale">
+          <img class="balance__pattern" src="assets/v2/pat-balance.svg" alt="">
+          <div class="balance__inner">
+            <p class="balance__label" data-i18n="example::balance::title">Bitcoin Balance</p>
+            <p class="balance__value" data-count="17877.13">€17,877.13</p>
+            <p class="balance__gain">
+              <span>+ <span data-count="10477.13">€10,477.13</span></span>
+              <span><img src="assets/v2/arrows-up.svg" width="12" height="12" alt=""> <span data-count="141.5" data-percent>+141.5%</span></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="setup">
+          <p class="setup__title" data-reveal data-i18n="example::setup::title">A typical recurring buy setup</p>
+          <ul class="chips">
+            <li class="chip" data-reveal="pop" style="--d:.05s"><img src="assets/v2/btc-48.svg" width="48" height="48" alt=""><div><span data-i18n="example::setup::asset">Asset:</span><b>Bitcoin</b></div></li>
+            <li class="chip" data-reveal="pop" style="--d:.15s"><span class="chip__ico" style="background:#8eb5ff"><img src="assets/v2/calendar.svg" width="27" height="27" alt=""></span><div><span data-i18n="example::setup::frequency">Frequency:</span><b data-i18n="whatis::frequency::monthly">Monthly</b></div></li>
+            <li class="chip" data-reveal="pop" style="--d:.25s"><span class="chip__ico" style="background:#cbea00"><img src="assets/v2/coins.svg" width="27" height="27" alt=""></span><div><span data-i18n="example::setup::amount">Amount:</span><b data-money="100" data-dec="0">€100</b></div></li>
+          </ul>
+          <p class="disclaimer" data-reveal data-i18n="example::disclaimer::text">The information provided here is for educational purposes only. Past performance does not guarantee future results.</p>
+        </div>
+      </div>
+
+      <figure class="chart" data-reveal id="chart">
+        <div class="chart__plot">
+          <ul class="chart__y">
+            <li><i></i><span data-i18n="example::chart::y5">€ 26.5K</span></li>
+            <li><i></i><span data-i18n="example::chart::y4">€ 19.5K</span></li>
+            <li><i></i><span data-i18n="example::chart::y3">€ 13K</span></li>
+            <li><i></i><span data-i18n="example::chart::y2">€ 6.5K</span></li>
+            <li><i></i><span data-i18n="example::chart::y1">€ 0</span></li>
+          </ul>
+          <svg class="chart__svg" viewBox="0 0 558 380" aria-hidden="true">
+            <path class="chart__area" d="M16 372L583 261V371.5Z" fill="#D5E8FF"/>
+            <g transform="translate(14 71.9)"><path class="chart__line" pathLength="1" fill="none" stroke="#089464" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M2.00028 301.065L18.9586 298.485C20.7683 298.21 22.4756 297.469 23.9128 296.335C25.7769 294.864 28.0819 294.065 30.4561 294.065H34.5514C39.3884 294.065 44.0951 292.497 47.9658 289.596L49.4107 288.513C52.8755 285.917 55.6856 282.547 57.617 278.672L59.5785 274.736C60.6116 272.663 62.2034 270.92 64.1743 269.703C66.4249 268.314 68.1737 266.243 69.1665 263.791L78.8649 239.842C79.8529 237.402 82.5094 236.087 85.0486 236.78C86.828 237.266 88.2163 238.659 88.6962 240.44L93.192 257.124C93.7596 259.231 95.4744 260.832 97.6148 261.254C100.063 261.737 102.541 260.58 103.743 258.393L111.293 244.659C112.342 242.75 114.347 241.565 116.524 241.565C119.253 241.565 121.635 239.714 122.309 237.07L125.141 225.959C125.9 222.979 128.93 221.177 131.911 221.933C133.493 222.334 134.819 223.408 135.54 224.871L141.181 236.313C143.448 240.911 149.82 241.38 152.736 237.164C153.458 236.119 154.467 235.298 155.635 234.801C158.664 233.51 162.199 234.566 164.007 237.316L172.111 249.646C172.513 250.257 172.847 250.909 173.107 251.593L176.602 260.761C177.767 263.817 181.784 264.502 183.895 262.004C185.477 260.131 188.303 259.961 190.099 261.631L191.104 262.565C192.141 263.529 193.504 264.065 194.919 264.065H197.921C199.125 264.065 200.306 263.741 201.342 263.129C204.29 261.385 208.079 262.14 210.137 264.878C211.407 266.569 213.399 267.565 215.514 267.565H215.655C218.483 267.565 221.034 265.865 222.123 263.256L224.249 258.161C225.349 255.527 227.398 253.403 229.99 252.209C232.306 251.144 234.196 249.331 235.358 247.063L235.683 246.429C237.841 242.215 242.177 239.565 246.911 239.565H250.246C252.324 239.565 254.268 238.539 255.441 236.824C257.135 234.348 260.343 233.411 263.103 234.587L264.58 235.216C265.124 235.448 265.641 235.737 266.123 236.08L266.225 236.152C270.444 239.147 276.289 238.175 279.312 233.976L279.384 233.876C280.009 233.008 280.484 232.041 280.788 231.016L284.515 218.447C285.461 215.256 287.282 212.394 289.771 210.185L290.05 209.937C291.811 208.375 293.209 206.445 294.145 204.285L297.03 197.628C297.836 195.768 299.669 194.565 301.696 194.565C304.286 194.565 306.463 192.618 306.75 190.043L311.88 144.065L314.514 133.652C315.468 129.88 320.816 129.846 321.817 133.606C322.808 137.326 328.078 137.348 329.1 133.637L329.303 132.903C330.178 129.725 334.419 129.114 336.156 131.916C337.109 133.454 339.018 134.1 340.709 133.457L341.294 133.235C343.694 132.322 346.372 133.581 347.201 136.011L347.57 137.091C349.219 141.927 355.933 142.253 358.043 137.6L361.12 130.815C361.347 130.316 361.525 129.797 361.652 129.264L364.185 118.667C364.997 115.271 365.525 111.814 365.764 108.332L370.753 35.7236C370.901 33.5725 372.98 32.0949 375.06 32.6628C376.883 33.1606 378.764 32.0837 379.257 30.2596L379.462 29.5011C380.668 25.0423 387.14 25.5147 387.686 30.1014L390.353 52.5267C390.435 53.2138 390.632 53.8821 390.937 54.5032C393.426 59.5744 400.867 58.8665 402.354 53.4171L410.171 24.7838C410.702 22.841 413.088 22.1309 414.594 23.4677C416.151 24.8498 418.621 24.0374 419.054 22.0006L422.042 7.93204C422.711 4.78377 427.135 4.59921 428.064 7.68083C428.953 10.6319 433.132 10.6319 434.021 7.68083L434.875 4.84882C435.883 1.50333 440.393 0.965565 442.16 3.98026L444.206 7.4714C444.628 8.19171 444.888 8.99505 444.97 9.82594L450.356 64.9142C450.587 67.2691 452.566 69.0647 454.933 69.0647C457.226 69.0647 459.168 70.7543 459.486 73.0253L464.968 112.181C465.541 116.275 470.742 117.685 473.304 114.442C473.76 113.865 474.073 113.19 474.22 112.47L479 89.0647"/></g>
+          </svg>
+          <span class="chart__dot" aria-hidden="true"><i></i></span>
+        </div>
+        <div class="chart__x"><span>MAY ‘20</span><span>MAY ‘21</span><span>MAY ‘22</span><span>MAY ‘23</span><span>MAY ‘24</span><span>MAY ‘25</span><span>MAY ‘26</span></div>
+        <figcaption class="chart__legend">
+          <span><span data-i18n="example::chart::total_spent">Total spent amount</span><i style="background:#78a6ff"></i></span>
+          <span><span data-i18n="example::chart::total_value">Total value over time</span><i style="background:#08a066"></i></span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY IT WORKS ============ -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <header class="head"><h2 class="h2" data-words data-i18n="whyitworks::header::title">Why it works</h2></header>
+    <div class="why__grid">
+      <article class="reason" style="--c:#ff6000;--ic:#f8891e" data-reveal>
+        <img class="reason__pattern" src="assets/v2/pat-why1.svg" alt="">
+        <div class="reason__glass">
+          <div class="reason__head"><span class="reason__ico"><img src="assets/v2/icon-repeat.svg" width="36" height="36" alt=""></span><h3 data-i18n="whyitworks::card1::title">Set and forget</h3></div>
+          <p data-i18n="whyitworks::card1::text">Let’s be honest, it’s super convenient to set up your strategy once, and let it execute itself automatically. You don’t have to manage it manually anymore.</p>
+        </div>
+      </article>
+      <article class="reason" style="--c:#b5fce1;--ic:#70f8c4;--d:.12s" data-reveal>
+        <img class="reason__pattern" src="assets/v2/pat-why2.svg" alt="">
+        <div class="reason__glass">
+          <div class="reason__head"><span class="reason__ico"><img src="assets/v2/icon-exchange.svg" width="36" height="36" alt=""></span><h3 data-i18n="whyitworks::card2::title">Mitigate volatility</h3></div>
+          <p data-i18n="whyitworks::card2::text">If you’re concerned about the volatility of the market, setting up a DCA can help you with it. By investing on a frequent basis, you actually average out price movements.</p>
+        </div>
+      </article>
+      <article class="reason" style="--c:#cbea00;--ic:#cbea00;--d:.24s" data-reveal>
+        <img class="reason__pattern reason__pattern--left" src="assets/v2/pat-why3.svg" alt="">
+        <div class="reason__glass">
+          <div class="reason__head"><span class="reason__ico"><img src="assets/v2/icon-coins-swap.svg" width="36" height="36" alt=""></span><h3 data-i18n="whyitworks::card3::title">DCA vs one time</h3></div>
+          <p data-i18n="whyitworks::card3::text">A one-time buy invests your money all at once, at today’s price. A Recurring Buy splits it into smaller amounts over time, so you buy at different prices along the way.</p>
+        </div>
+      </article>
+    </div>
+    <p class="sub why__summary" data-reveal data-i18n="whyitworks::summary::text">In short, DCAs make investing in crypto simpler, less stressful and more strategic.</p>
+  </div>
+</section>
+
+<!-- ============ SETTING UP ============ -->
+<section class="section steps" id="setup">
+  <div class="wrap">
+    <header class="head">
+      <h2 class="h2" data-words data-i18n="setup::header::title">Setting up recurring buys</h2>
+      <a href="#download" class="cta" data-reveal="pop" style="--d:.25s">
+        <span class="cta__label" data-i18n="setup::cta::button">Download the app</span>
+        <span class="cta__icon"><img src="assets/v2/send-diagonal.svg" width="24" height="24" alt=""></span>
+      </a>
+    </header>
+    <div class="steps__list" id="steps">
+      <article class="scard" style="--c:#ffca0d;--cb:#ffca0d;--cs:#ffca0d">
+        <img class="scard__pattern" src="assets/pattern-step1.svg" alt="">
+        <div class="scard__veil"></div>
+        <div class="scard__text"><span class="scard__num">1</span><h3 class="scard__title" data-i18n="setup::step1::title">Select the crypto you want to buy on repeat</h3></div>
+        <div class="scard__slot"><img src="assets/step1-phone.png" width="548" height="496" data-i18n-attr="alt:setup::step1::alt" alt="Venga app: choose a crypto from the list"></div>
+        <i class="scard__shade"></i>
+      </article>
+      <article class="scard" style="--c:#78a6ff;--cb:#78a6ff;--cs:#78a6ff">
+        <img class="scard__pattern" src="assets/pattern-step2.svg" alt="">
+        <div class="scard__veil"></div>
+        <div class="scard__text"><span class="scard__num">2</span><h3 class="scard__title" data-i18n="setup::step2::title">Choose how often you want to buy</h3></div>
+        <div class="scard__slot"><img src="assets/step2-phone.png" width="548" height="496" data-i18n-attr="alt:setup::step2::alt" alt="Venga app: choose every week, every two weeks or every month"></div>
+        <i class="scard__shade"></i>
+      </article>
+      <article class="scard" style="--c:#70f8c4;--cb:#b5fce1;--cs:#70f8c4">
+        <img class="scard__pattern" src="assets/pattern-step3.svg" alt="">
+        <div class="scard__veil"></div>
+        <div class="scard__text"><span class="scard__num">3</span><h3 class="scard__title" data-i18n="setup::step3::title">Set the amount</h3></div>
+        <div class="scard__slot"><img src="assets/step3-phone.png" width="548" height="496" data-i18n-attr="alt:setup::step3::alt" alt="Venga app: set the amount in euros"></div>
+        <i class="scard__shade"></i>
+      </article>
+      <article class="scard" style="--c:#f8891e;--cb:#ffc09a;--cs:#ff6000">
+        <img class="scard__pattern" src="assets/pattern-step4.svg" alt="">
+        <div class="scard__veil"></div>
+        <div class="scard__text"><span class="scard__num">4</span><h3 class="scard__title" data-i18n="setup::step4::title">Choose your payment method</h3></div>
+        <div class="scard__slot"><img src="assets/step4-phone.png" width="548" height="496" data-i18n-attr="alt:setup::step4::alt" alt="Venga app: choose bank card or Apple Pay"></div>
+        <i class="scard__shade"></i>
+      </article>
+      <article class="scard" style="--c:#ff4365;--cb:#ff627f;--cs:#ff4365">
+        <img class="scard__pattern" src="assets/pattern-step5.svg" alt="">
+        <div class="scard__veil"></div>
+        <div class="scard__text"><span class="scard__num">5</span><h3 class="scard__title" data-i18n="setup::step5::title">Review your order with no hidden charges</h3></div>
+        <div class="scard__slot"><img src="assets/step5-phone.png" width="548" height="496" data-i18n-attr="alt:setup::step5::alt" alt="Venga app: review your recurring buy for BTC"></div>
+        <i class="scard__shade"></i>
+      </article>
+      <article class="scard scard--qr" id="download" style="--c:#f7f6ed;--cb:#ecebe4">
+        <img class="scard__pattern" src="assets/pattern-step6.svg" alt="">
+        <div class="scard__veil"></div>
+        <div class="scard__text"><h3 class="scard__title" data-i18n="setup::step6::title">Download the Venga app and invest in crypto</h3></div>
+        <div class="scard__slot"><img src="assets/step6-phone.png" width="548" height="496" data-i18n-attr="alt:setup::step6::alt" alt="QR code to download the Venga app on iOS or Android"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STOP WORRYING ============ -->
+<section class="section benefits" id="benefits">
+  <div class="wrap benefits__grid">
+    <div class="photo" data-reveal="scale" id="photo">
+      <img class="photo__img" src="assets/v2/hammock.jpg" width="1600" height="825" alt="" loading="lazy">
+      <div class="photo__pill">
+        <img src="assets/v2/btc-white.svg" width="48" height="48" alt="">
+        <div class="photo__pill-text"><b>Bitcoin</b><span data-i18n="benefits::illustration::frequency">Every Monday</span></div>
+        <b class="photo__amount" data-count="1200" data-dec="0">€1200</b>
+      </div>
+    </div>
+    <div class="benefits__copy">
+      <h2 class="h2 h2--left" data-words data-i18n="benefits::header::title">Stop worrying about that perfect moment to invest in</h2>
+      <ul class="perks">
+        <li data-reveal style="--d:.05s"><span class="perks__ico"><img src="assets/v2/icon-clock.svg" width="24" height="24" alt=""></span><p data-i18n="benefits::point1::text">Skip the price-watching. DCA spreads your buys over time. You don’t need to check charts or guess where prices are heading.</p></li>
+        <li data-reveal style="--d:.15s"><span class="perks__ico"><img src="assets/v2/icon-calendar.svg" width="24" height="24" alt=""></span><p data-i18n="benefits::point2::text">Every week or month, your crypto is bought for you. Once your plan is set, there’s nothing to remember.</p></li>
+        <li data-reveal style="--d:.25s"><span class="perks__ico"><img src="assets/v2/icon-coins.svg" width="24" height="24" alt=""></span><p data-i18n="benefits::point3::text">Start small, with an amount that fits your budget. Even small, regular amounts can build up over time.</p></li>
+        <li data-reveal style="--d:.35s"><span class="perks__ico"><img src="assets/v2/icon-hand.svg" width="24" height="24" alt=""></span><p data-i18n="benefits::point4::text">Want to stop? Cancel in a few taps. There’s no lock-in and no commitment.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STILL IN DOUBT (BLOG) ============ -->
+<section class="section blog" id="blog">
+  <div class="wrap">
+    <header class="head">
+      <h2 class="h2" data-words data-i18n="blog::header::title">Still in doubt?</h2>
+      <p class="sub" data-reveal style="--d:.15s" data-i18n="blog::header::subtitle">Our blog breaks down the basics without breaking your brain.</p>
+    </header>
+    <div class="blog__card" data-reveal>
+      <div class="blog__cover">
+        <img src="assets/v2/blog-cover.jpg" width="1200" height="726" alt="" loading="lazy">
+        <button class="blog__arrow blog__arrow--prev" type="button" data-i18n-attr="aria-label:blog::nav::prev"><img src="assets/v2/nav-arrow-left.svg" width="24" height="24" alt=""></button>
+        <button class="blog__arrow blog__arrow--next" type="button" data-i18n-attr="aria-label:blog::nav::next"><img src="assets/v2/nav-arrow-left.svg" width="24" height="24" alt=""></button>
+      </div>
+      <ol class="articles" id="articles">
+        <li class="article is-active">
+          <button class="article__head" type="button" aria-expanded="true"><span class="article__num">1</span><span class="article__title" data-i18n="blog::article1::title">The Future of Crypto in the Next 5 Years: Coins, Trends, and Predictions</span></button>
+          <div class="article__body"><div>
+            <p data-i18n="blog::article1::text">Have you woken up to your crypto holdings either soaring or crashing? And wondered what they will look like by evening, in the next two days, weeks or what crypto will look like in the next five years?</p>
+            <a href="#" class="cta cta--sm"><span class="cta__label" data-i18n="blog::article::button">Read Article</span><span class="cta__icon"><img src="assets/v2/arrow-right-dark.svg" width="24" height="24" alt=""></span></a>
+          </div></div>
+        </li>
+        <li class="article">
+          <button class="article__head" type="button" aria-expanded="false"><span class="article__num">2</span><span class="article__title" data-i18n="blog::article2::title">What Are Memecoins and Why Are They So Popular?</span></button>
+          <div class="article__body"><div>
+            <p data-i18n="blog::article2::text">Memecoins started as internet jokes. Here’s what they are, why prices can swing so much, and what to know before you buy.</p>
+            <a href="#" class="cta cta--sm"><span class="cta__label" data-i18n="blog::article::button">Read Article</span><span class="cta__icon"><img src="assets/v2/arrow-right-dark.svg" width="24" height="24" alt=""></span></a>
+          </div></div>
+        </li>
+        <li class="article">
+          <button class="article__head" type="button" aria-expanded="false"><span class="article__num">3</span><span class="article__title" data-i18n="blog::article3::title">The Venga app is now available in Spanish</span></button>
+          <div class="article__body"><div>
+            <p data-i18n="blog::article3::text">You can now use every part of the Venga app in Spanish. Here’s how to switch your language in a couple of taps.</p>
+            <a href="#" class="cta cta--sm"><span class="cta__label" data-i18n="blog::article::button">Read Article</span><span class="cta__icon"><img src="assets/v2/arrow-right-dark.svg" width="24" height="24" alt=""></span></a>
+          </div></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="section trust" id="trust">
+  <div class="wrap">
+    <header class="head head--narrow">
+      <h2 class="h2" data-words data-i18n="trust::header::title">Keep your mind at peace</h2>
+      <div class="sub trust__text" data-reveal style="--d:.15s">
+        <p data-i18n="trust::header::text1">Venga is headquartered in Barcelona, with a strong focus on creating a secure, transparent, and compliant platform.</p>
+        <p data-i18n="trust::header::text2">We’re committed to building trust and delivering a Europe-first experience.</p>
+      </div>
+    </header>
+    <div class="trust__cards">
+      <article class="tcard tcard--eu" data-reveal>
+        <img class="tcard__bg" src="assets/v2/trust-eu.jpg" alt="" loading="lazy">
+        <div class="tcard__text">
+          <h3 data-i18n="trust::card1::title">Regulated in the European Union</h3>
+          <p data-i18n="trust::card1::text">Approved by the CNMV in Spain, holding a MiCA license to operate as a crypto-asset service provider in Europe.</p>
+        </div>
+        <div class="tcard__row"><a href="#" class="mini-btn"><span data-i18n="trust::card1::button">What is MiCA and what it means for you</span><span class="mini-btn__ico"><img src="assets/v2/arrow-right-light.svg" alt=""><img src="assets/v2/arrow-right-light.svg" alt=""></span></a></div>
+      </article>
+      <article class="tcard tcard--funds" data-reveal style="--d:.12s">
+        <img class="tcard__bg" src="assets/v2/trust-funds-bg.jpg" alt="" loading="lazy">
+        <img class="tcard__bg tcard__bg--v" src="assets/v2/trust-funds.jpg" alt="" loading="lazy">
+        <div class="tcard__text">
+          <h3 data-i18n="trust::card2::title">Your funds and data, protected.</h3>
+          <p data-i18n="trust::card2::text">Encrypted transactions, secure account verification, and custody practices designed to keep your assets safe.</p>
+        </div>
+        <div class="tcard__row"><a href="#" class="mini-btn"><span data-i18n="trust::card2::button">More About Us</span><span class="mini-btn__ico"><img src="assets/v2/arrow-right-light.svg" alt=""><img src="assets/v2/arrow-right-light.svg" alt=""></span></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT ELSE ============ -->
+<section class="section more" id="more">
+  <div class="wrap">
+    <header class="head">
+      <h2 class="h2" data-words data-i18n="features::header::title">What else can you do on Venga?</h2>
+      <p class="sub" data-reveal style="--d:.15s" data-i18n="features::header::text">Invest in digital assets effortlessly. Buy crypto, manage your funds, and generate yields inside a slick and intuitive interface.</p>
+    </header>
+    <div class="features">
+      <a href="#" class="feature" data-reveal="pop" style="--d:0s;--c:#78a6ff">
+        <span class="feature__block"><img class="feature__pattern" style="--pw:733.63;--px:92.21;--py:91.7" src="assets/v2/pat-buy.svg" alt=""><img class="feature__icon" src="assets/v2/icon-buy.svg" alt=""></span>
+        <span class="feature__label" data-i18n="features::actions::buy">Buy</span>
+      </a>
+      <a href="#" class="feature" data-reveal="pop" style="--d:.08s;--c:#70f8c4">
+        <span class="feature__block"><img class="feature__pattern" style="--pw:458.53;--px:-27.12;--py:40.54" src="assets/v2/pat-sell.svg" alt=""><img class="feature__icon" src="assets/v2/icon-sell.svg" alt=""></span>
+        <span class="feature__label" data-i18n="features::actions::sell">Sell</span>
+      </a>
+      <a href="#" class="feature" data-reveal="pop" style="--d:.16s;--c:#ff4365">
+        <span class="feature__block"><img class="feature__pattern" style="--pw:550.23;--px:0;--py:0" src="assets/v2/pat-swap.svg" alt=""><img class="feature__icon" src="assets/v2/icon-swap.svg" alt=""></span>
+        <span class="feature__label" data-i18n="features::actions::swap">Swap</span>
+      </a>
+      <a href="#" class="feature" data-reveal="pop" style="--d:.24s;--c:#ffca0d">
+        <span class="feature__block"><img class="feature__pattern" style="--pw:371.4;--px:25.22;--py:43.56" src="assets/v2/pat-earn.svg" alt=""><img class="feature__icon" src="assets/v2/icon-earn.svg" alt=""></span>
+        <span class="feature__label" data-i18n="features::actions::earn">Earn</span>
+      </a>
+    </div>
+    <a href="#download" class="cta" data-reveal="pop" style="--d:.3s">
+      <span class="cta__label" data-i18n="features::cta::button">Download the app</span>
+      <span class="cta__icon"><img src="assets/v2/send-diagonal.svg" width="24" height="24" alt=""></span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FAQ + FOOTER ============ -->
+<section class="faq-wrap" id="faq">
+  <div class="faq-wrap__bg" aria-hidden="true"><img src="assets/v2/faq-bg.svg" alt=""></div>
+  <div class="faq-wrap__inner">
+    <div class="faq" data-reveal>
+      <header class="faq__head">
+        <h2 class="h1 faq__title" data-words data-i18n="faq::header::title">DCA FAQ</h2>
+        <p class="sub" data-reveal style="--d:.1s" data-i18n="faq::header::text">Here is additional information to answer some of the common questions about Recurring Orders and how to benefit from them with Venga.</p>
+      </header>
+      <div class="faq__list" id="faq-list">
+        <!-- Questions are rendered from i18n.js (faq::q1…q10) so both languages stay in one place -->
+      </div>
+      <a href="#" class="btn-dark"><span data-i18n="faq::cta::button">More Questions?</span><span class="btn-dark__ico"><img src="assets/v2/arrow-right-faq.svg" alt=""><img src="assets/v2/arrow-right-faq.svg" alt=""></span></a>
+    </div>
+
+    <footer class="footer" data-reveal>
+      <div class="footer__top">
+        <div class="footer__side">
+          <a href="#download" class="footer__dl" data-i18n="footer::download">Download</a>
+          <form class="news" onsubmit="event.preventDefault()">
+            <label for="news-email" data-i18n="footer::newsletter">Get the weekly Venga Newsletter</label>
+            <div class="news__field">
+              <img src="assets/v2/pat-newsletter.svg" alt="">
+              <div class="news__bar"><img src="assets/v2/icon-mail.svg" width="24" height="24" alt=""><input id="news-email" type="email" autocomplete="email" data-i18n-attr="placeholder:footer::email" placeholder="Enter your email address"></div>
+            </div>
+          </form>
+        </div>
+        <nav class="footer__cols" aria-label="Footer">
+          <div><h4 data-i18n="footer::general">General</h4><a href="#" data-i18n="footer::about">About</a><a href="#" data-i18n="footer::careers">Working With Us</a><a href="#" data-i18n="footer::events">Events</a><a href="#" data-i18n="footer::glossary">Glossary</a><a href="#blog" data-i18n="footer::blog">Blog</a></div>
+          <div><h4 data-i18n="footer::product">Product</h4><a href="#" data-i18n="footer::buy">Buy</a><a href="#" data-i18n="footer::sell">Sell</a><a href="#" data-i18n="footer::swap">Swap</a><a href="#" data-i18n="footer::bundles">Bundles</a><a href="#top" data-i18n="footer::recurring">Recurring Buys</a><a href="#" data-i18n="footer::earn">Earn</a><a href="#" data-i18n="footer::cards">Cards</a><a href="#" data-i18n="footer::api">API for Businesses</a></div>
+          <div><h4 data-i18n="footer::legal">Legal</h4><a href="#" data-i18n="footer::legal_hub">Legal Hub</a><a href="#" data-i18n="footer::terms">Terms of Service</a><a href="#" data-i18n="footer::privacy">Privacy Policy</a><a href="#" data-i18n="footer::cookies">Cookies Policy</a><a href="#" data-i18n="footer::whistle_policy">Whistleblowing Policy</a><a href="#" data-i18n="footer::whistle_channel">Whistleblowing Channel</a><a href="#" data-i18n="footer::chain_abuse">Chain Abuse</a></div>
+          <div><h4 data-i18n="footer::help">Help</h4><a href="#" data-i18n="footer::help_center">Help Center</a><a href="#faq" data-i18n="footer::faqs">FAQs</a></div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__brand">
+          <img src="assets/v2/logo-invert.svg" width="119" height="24" alt="Venga">
+          <div class="footer__community">
+            <p data-i18n="footer::community">Join our community</p>
+            <div class="socials">
+              <a href="#" aria-label="Facebook"><img src="assets/v2/social-1.svg" width="24" height="24" alt=""></a>
+              <a href="#" aria-label="Instagram"><img src="assets/v2/social-2.svg" width="24" height="24" alt=""></a>
+              <a href="#" aria-label="X"><img src="assets/v2/social-3.svg" width="24" height="24" alt=""></a>
+              <a href="#" aria-label="LinkedIn"><img src="assets/v2/social-4.svg" width="24" height="24" alt=""></a>
+              <a href="#" aria-label="YouTube"><img src="assets/v2/social-5.svg" width="24" height="24" alt=""></a>
+              <a href="#" aria-label="Warpcast"><img src="assets/v2/social-warpcast.svg" width="24" height="24" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <img class="footer__rule" src="assets/v2/footer-rule.svg" alt="">
+        <p class="footer__legal" data-i18n="footer::legal_text">Venga Europe SL (provider of the Venga App) is registered as a Virtual Asset Service Provider and Custodian with the Bank of Spain under registration number D945.</p>
+      </div>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<script src="i18n.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>
